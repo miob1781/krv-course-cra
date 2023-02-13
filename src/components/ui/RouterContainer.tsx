@@ -31,8 +31,8 @@ sectionsData.forEach((sectionData: SectionData) => {
     })
 })
 
-const Section_1 = lazy(() => import("../introductions/Intro-1"))
-const Section_1_1 = lazy(() => import("../sections/Section-1-1"))
+const SECTION_1 = lazy(() => import("../introductions/Intro-1"))
+const SECTION_1_1 = lazy(() => import("../sections/Section-1-1"))
 
 export default function RouterContainer() {
     return (
@@ -42,8 +42,8 @@ export default function RouterContainer() {
                 <Route path="/account" element={<Account />} />
                 <Route path="/login" element={<Login />} />
                 <Route path="/signup" element={<Signup />} />
-                <Route path="/section-1" element={<Section_1 sectionData={sectionsData[0]} />} />
-                <Route path="/section-1-1" element={<Section_1_1 sectionData={sectionsData[0].subSections![0]} />} />
+                <Route path="/section-1" element={<SECTION_1 sectionData={sectionsData[0]} />} />
+                <Route path="/section-1-1" element={<SECTION_1_1 sectionData={sectionsData[0].subSections![0]} />} />
                 {sectionRoutes}
             </Routes>
         </Suspense>
