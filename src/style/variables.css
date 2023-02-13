@@ -1,0 +1,12 @@
+:root {
+    --primary-color: rgb(151, 3, 151);
+    --primary-color-light: rgb(184, 44, 184);
+    --primary-color-very-light: rgb(214, 60, 214);
+    --primary-color-dark: rgb(121, 5, 121);
+    --primary-color-very-dark: rgb(71, 4, 71);
+    --primary-color-disabled: rgb(151, 85, 151);
+    --text-on-primary-color: whitesmoke;
+    --accent-color: LemonChiffon;
+    --main-font: Garamond, sans-serif;
+    --notes-font: Optima, sans-serif;
+}

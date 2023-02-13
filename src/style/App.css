@@ -1,0 +1,101 @@
+@import "./variables.css";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    hyphens: auto;
+    line-height: 1.4;
+    font-family: var(--main-font);
+    font-size: 21px;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.6rem;
+}
+
+h3 {
+    font-size: 1.15rem;
+}
+
+button {
+    color: var(--text-on-primary-color);
+    background-color: var(--primary-color);
+    padding: 8px 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: 1px solid grey;
+    box-shadow: 2px 2px 2px grey;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--primary-color-light);
+    transition: 0.5s ease-out;
+}
+
+button:active {
+    background-color: var(--primary-color-dark);
+    transition: 0.2s ease-in;
+}
+
+.App {
+    margin: 40px;
+    display: flex;
+    width: 100%;
+    min-height: 700px;
+}
+
+.side-cont {
+    width: 250px;
+}
+
+.side-cont > * {
+    border-radius: 5px;
+}
+
+.kant-image {
+    max-width: 250px;
+}
+
+.app-inner-cont {
+    min-width: 100%;
+}
+
+@media screen and (max-width: 720px) {
+    .App {
+        max-width: 84vw;
+        margin: 8vw;
+    }
+
+    .side-cont {
+        display: none;
+    }
+
+    h1 {
+        font-size: 1.7rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    button {
+        padding: 6px;
+    }
+}

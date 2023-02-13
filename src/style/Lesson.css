@@ -1,0 +1,33 @@
+@import "./variables.css";
+
+.lesson-cont {
+    display: grid;
+    grid-template-columns: 110px minmax(400px, 700px) minmax(auto, 500px);
+    gap: 25px 20px;
+    width: 100%;
+}
+
+.lesson-header {
+    grid-column: 2;
+    grid-row: 1;
+    width: 100%;
+}
+
+.lesson-end-button-cont {
+    grid-column: 2;
+    justify-self: center;
+}
+
+@media screen and (max-width: 720px) {
+    .lesson-cont {
+        display: block;
+    }
+
+    .lesson-end-button-cont {
+        margin-top: 10px;
+    }
+
+    .lesson-end-button-second-half {
+        display: none;
+    }
+}

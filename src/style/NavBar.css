@@ -1,0 +1,23 @@
+@import "./variables.css";
+
+.NavBar {
+    margin-bottom: 30px;
+    padding: 15px;
+    background-color: var(--primary-color);
+}
+
+.NavBar > * {
+    margin-right: 15px;
+    color: var(--text-on-primary-color);
+}
+
+.NavBar.small {
+    display: none;
+}
+
+@media screen and (max-width: 720px) {
+    .NavBar.small {
+        display: block;
+        max-width: 100%;
+    }
+}

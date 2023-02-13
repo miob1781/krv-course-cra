@@ -1,0 +1,26 @@
+@import "./variables.css";
+
+.Sidebar {
+    margin-top: 30px;
+    padding: 15px 0;
+    flex-shrink: 0;
+    background-color: var(--primary-color);
+    color: var(--text-on-primary-color);
+    text-align: center;
+}
+
+.Sidebar .toc-list-outer-cont {
+    padding: 10px;
+    padding-left: 30px;
+}
+
+.Sidebar .toc-list-outer-cont:hover {
+    background-color: var(--primary-color-light);
+    background-color: var(--primary-color-light);
+    transition: 0.5s ease-out;
+}
+
+.Sidebar .toc-list-outer-cont:active {
+    background-color: var(--primary-color-very-dark);
+    transition: 0.2s ease-in;
+}

@@ -1,0 +1,37 @@
+@import "./variables.css";
+
+textarea {
+    padding: 8px;
+    font-family: var(--notes-font);
+    font-size: 0.8rem;
+    line-height: 1.15;
+    border-radius: 5px;
+}
+
+textarea.small {
+    display: none;
+}
+
+.NoteForm button {
+    margin-top: 5px;
+    font-size: 0.9rem;
+    font-weight: normal;
+    margin-right: 8px;
+}
+
+@media screen and (max-width: 720px) {
+    .NoteForm {
+        margin-left: 4vw;
+        margin-bottom: 20px;
+    }
+
+    textarea {
+        display: none;
+    }
+
+    textarea.small {
+        display: block;
+        margin-bottom: 5px;
+        resize: none;
+    }
+}

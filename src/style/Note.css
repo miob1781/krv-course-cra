@@ -1,0 +1,78 @@
+@import "./variables.css";
+
+.Note {
+    grid-column: 3;
+    display: flex;
+    place-items: center;
+    max-height: 100%;
+    text-align: left;
+    color: lightpink;
+}
+
+.Note:hover {
+    color: var(--primary-color);
+    transition: color 1s ease-out;
+}
+
+.Note:active {
+    color: var(--primary-color-very-dark);
+    transition: 0.2s ease-in;
+}
+
+.note-text,
+.snippet {
+    color: darkslategrey;
+    font-family: var(--notes-font);
+    font-size: 0.8rem;
+    line-height: 1.2;
+}
+
+.note-text {
+    text-align: justify;
+}
+
+.plus-icon {
+    margin-left: 40px;
+    font-size: 1.6rem;
+    cursor: pointer;
+    box-shadow: 1.5px 1.5px 1.5px grey;
+    border-radius: 50%;
+}
+
+.plus-icon.small {
+    display: none;
+}
+
+.edit-note-icon, .open-note-icon, .close-note-icon {
+    margin-left: 0.5em;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.small-note-intro {
+    display: none;
+} 
+
+@media screen and (max-width: 720px) {
+    .note-text {
+        max-width: 100%;
+    }
+
+    .plus-icon {
+        display: none;
+    }
+
+    .plus-icon.small {
+        display: inline;
+        margin-left: 10px;
+        color: var(--primary-color);
+        font-size: inherit;
+    }
+
+    .small-note-intro {
+        display: inline;
+        margin-right: 8px;
+        color: var(--primary-color);
+        font-style: italic;
+    }
+}
