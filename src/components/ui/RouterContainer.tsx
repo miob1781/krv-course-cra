@@ -44,7 +44,7 @@ export default function RouterContainer() {
                 <Route path="/signup" element={<Signup />} />
                 <Route path="/section-1" element={<SECTION_1 sectionData={sectionsData[0]} />} />
                 <Route path="/section-1-1" element={<SECTION_1_1 sectionData={sectionsData[0].subSections![0]} />} />
-                {sectionRoutes}
+                {/* {sectionRoutes} */}
             </Routes>
         </Suspense>
     )
