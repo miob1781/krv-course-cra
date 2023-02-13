@@ -12,7 +12,7 @@ import { sectionsData } from "../../consts/sections-data"
 const sectionRoutes: ReactElement[] = []
 
 function getRoute(sectionData: SectionData): ReactElement {
-    const COMPONENT = lazy(() => import(sectionData.fsPath))
+    const COMPONENT = lazy(() => import(`${sectionData.fsPath}`))
     return (
         <Route
             key={sectionData.path}
