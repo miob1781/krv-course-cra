@@ -31,8 +31,8 @@ sectionsData.forEach((sectionData: SectionData) => {
     })
 })
 
-const SECTION_1 = lazy(() => import("../introductions/Intro-1"))
-const SECTION_1_1 = lazy(() => import("../sections/Section-1-1"))
+const SECTION_1 = lazy(() => import(`../introductions/Intro-1`))
+const SECTION_1_1 = lazy(() => import(`../sections/Section-1-1`))
 
 export default function RouterContainer() {
     return (
